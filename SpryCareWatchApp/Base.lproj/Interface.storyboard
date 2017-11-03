@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -64,11 +64,33 @@
                         <label width="134" height="84" alignment="center" verticalAlignment="center" text="Alarm Activated!" textAlignment="center" id="dxn-wm-pPG">
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Deactivate" id="c0Y-sf-w3H"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Deactivate" id="c0Y-sf-w3H">
+                            <connections>
+                                <segue destination="eBM-KH-cfD" kind="modal" id="5UZ-Cc-OFi"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="732" y="739"/>
+            <point key="canvasLocation" x="892" y="676"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="jaw-Fp-rt5">
+            <objects>
+                <controller id="eBM-KH-cfD">
+                    <items>
+                        <label width="102" alignment="center" verticalAlignment="center" text="Alarm Deactivated" textAlignment="center" numberOfLines="2" id="t6c-yk-fgZ">
+                            <color key="textColor" red="0.0" green="0.4793452024" blue="0.99908632040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Okay!" id="YE1-Me-eaP">
+                            <connections>
+                                <segue destination="bey-qe-Gmt" kind="modal" id="pR8-BY-FIr"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="811" y="1114"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="Odf-e4-Kwj">
@@ -149,14 +171,29 @@
                                 <longPressGestureRecognizer id="vTz-6N-oSw"/>
                             </gestureRecognizers>
                             <connections>
-                                <segue destination="AYo-oE-5VY" kind="modal" id="9Jc-nH-rhl"/>
+                                <segue destination="Psv-pg-cAK" kind="push" id="6r6-KC-bfy"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="No" id="Cif-td-39j"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="No" id="Cif-td-39j">
+                            <connections>
+                                <segue destination="bey-qe-Gmt" kind="modal" id="5IF-3X-CC9"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="1687" y="240"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="k8e-Ke-LH6">
+            <objects>
+                <controller id="Psv-pg-cAK">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Waiting For Reponse" textAlignment="center" numberOfLines="2" id="zGj-XF-aFy"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1946" y="240"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="lma-wd-c4N">
@@ -187,7 +224,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="2111" y="229"/>
+            <point key="canvasLocation" x="2217" y="240"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="s98-VN-Bq2">
@@ -199,7 +236,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="2506" y="223"/>
+            <point key="canvasLocation" x="2506" y="240"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -227,5 +264,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="rDt-8h-zag"/>
+        <segue reference="5IF-3X-CC9"/>
     </inferredMetricsTieBreakers>
 </document>

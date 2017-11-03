@@ -23,6 +23,7 @@
 		470D4C3B1F8DD2B100D64E41 /* DataExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470D4C3A1F8DD2B100D64E41 /* DataExtraction.swift */; };
 		470D4C3F1F8DD91B00D64E41 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470D4C3E1F8DD91B00D64E41 /* HealthKit.framework */; };
 		470D4C411F8DD92900D64E41 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470D4C401F8DD92900D64E41 /* ExternalAccessory.framework */; };
+		473FA9711FABD71200000A93 /* HapticReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473FA9701FABD71200000A93 /* HapticReponse.swift */; };
 		47C070051FA829D700BD5539 /* FallDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B01EB1F984C8C0085819B /* FallDetection.swift */; };
 		47C070091FA8308300BD5539 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C070081FA8308300BD5539 /* Location.swift */; };
 		47C0700B1FA8311100BD5539 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C0700A1FA8311100BD5539 /* MapKit.framework */; };
@@ -96,6 +97,7 @@
 		470D4C3C1F8DD91A00D64E41 /* SpryCareWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpryCareWatch.entitlements; sourceTree = "<group>"; };
 		470D4C3E1F8DD91B00D64E41 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		470D4C401F8DD92900D64E41 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		473FA9701FABD71200000A93 /* HapticReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticReponse.swift; sourceTree = "<group>"; };
 		47C070081FA8308300BD5539 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		47C0700A1FA8311100BD5539 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		47C0700C1FA8311800BD5539 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -184,6 +186,7 @@
 				470D4C2C1F8D9CED00D64E41 /* Assets.xcassets */,
 				470D4C2E1F8D9CED00D64E41 /* Info.plist */,
 				470D4C2F1F8D9CED00D64E41 /* PushNotificationPayload.apns */,
+				473FA9701FABD71200000A93 /* HapticReponse.swift */,
 			);
 			path = "SpryCareWatchApp Extension";
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				47C070051FA829D700BD5539 /* FallDetection.swift in Sources */,
 				470D4C2B1F8D9CED00D64E41 /* NotificationController.swift in Sources */,
 				47C070091FA8308300BD5539 /* Location.swift in Sources */,
+				473FA9711FABD71200000A93 /* HapticReponse.swift in Sources */,
 				470D4C291F8D9CED00D64E41 /* ExtensionDelegate.swift in Sources */,
 				470D4C271F8D9CED00D64E41 /* InterfaceController.swift in Sources */,
 			);
