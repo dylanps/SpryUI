@@ -60,7 +60,6 @@
             <objects>
                 <controller id="R2W-ZV-pez">
                     <items>
-                        <timer alignment="left" format="abbreviated" id="6uq-Fi-h81"/>
                         <label width="134" height="84" alignment="center" verticalAlignment="center" text="Alarm Activated!" textAlignment="center" id="dxn-wm-pPG">
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
@@ -190,6 +189,11 @@
                 <controller id="Psv-pg-cAK">
                     <items>
                         <label alignment="center" verticalAlignment="center" text="Waiting For Reponse" textAlignment="center" numberOfLines="2" id="zGj-XF-aFy"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Test Confirm" id="TgW-Aw-DCO">
+                            <connections>
+                                <segue destination="AYo-oE-5VY" kind="push" id="mZL-EE-3bw"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -219,7 +223,6 @@
             <objects>
                 <controller id="AYo-oE-5VY">
                     <items>
-                        <timer alignment="left" id="v0h-9d-CeI"/>
                         <map height="126" alignment="left" id="hzU-6i-0rj"/>
                     </items>
                 </controller>
