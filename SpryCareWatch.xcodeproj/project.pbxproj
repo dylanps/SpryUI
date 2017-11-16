@@ -183,10 +183,10 @@
 				470D4C261F8D9CED00D64E41 /* InterfaceController.swift */,
 				470D4C281F8D9CED00D64E41 /* ExtensionDelegate.swift */,
 				470D4C2A1F8D9CED00D64E41 /* NotificationController.swift */,
+				473FA9701FABD71200000A93 /* HapticReponse.swift */,
 				470D4C2C1F8D9CED00D64E41 /* Assets.xcassets */,
 				470D4C2E1F8D9CED00D64E41 /* Info.plist */,
 				470D4C2F1F8D9CED00D64E41 /* PushNotificationPayload.apns */,
-				473FA9701FABD71200000A93 /* HapticReponse.swift */,
 			);
 			path = "SpryCareWatchApp Extension";
 			sourceTree = "<group>";

@@ -55,23 +55,24 @@
             </objects>
             <point key="canvasLocation" x="486" y="325"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Haptic Response-->
         <scene sceneID="h1J-iE-mc8">
             <objects>
-                <controller id="R2W-ZV-pez">
+                <controller id="R2W-ZV-pez" customClass="HapticResponse" customModule="SpryCareWatchApp_Extension">
                     <items>
                         <label width="134" height="84" alignment="center" verticalAlignment="center" text="Alarm Activated!" textAlignment="center" id="dxn-wm-pPG">
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Deactivate" id="c0Y-sf-w3H">
                             <connections>
-                                <segue destination="eBM-KH-cfD" kind="push" id="bTF-ac-Cum"/>
+                                <action selector="DeactivateAlarm" destination="R2W-ZV-pez" id="d7P-dV-6Hd"/>
+                                <segue destination="eBM-KH-cfD" kind="modal" id="KDS-Pf-26Y"/>
                             </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="486" y="932"/>
+            <point key="canvasLocation" x="329" y="1144"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="jaw-Fp-rt5">
@@ -89,7 +90,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="486" y="1476"/>
+            <point key="canvasLocation" x="606" y="1144"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="Odf-e4-Kwj">
@@ -286,7 +287,7 @@
                                 <longPressGestureRecognizer id="lzb-MB-hqa"/>
                             </gestureRecognizers>
                             <connections>
-                                <action selector="ContactECs" destination="80C-7m-5n8" id="jDV-xW-Kgd"/>
+                                <action selector="test" destination="80C-7m-5n8" id="2Bm-oA-4tO"/>
                                 <segue destination="MoL-Jc-jnc" kind="push" id="PgC-Nc-zim"/>
                             </connections>
                         </button>
@@ -298,11 +299,11 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="896" y="735"/>
+            <point key="canvasLocation" x="859" y="984"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OZA-mM-qhn"/>
-        <segue reference="hNB-Mp-h7V"/>
+        <segue reference="7En-OY-A2S"/>
     </inferredMetricsTieBreakers>
 </document>
