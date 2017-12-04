@@ -267,14 +267,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="-43" y="710"/>
+            <point key="canvasLocation" x="-238" y="707"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SpryCareWatchApp" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="254" y="710"/>
+            <point key="canvasLocation" x="59" y="707"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="hud-oF-7gD">
@@ -299,11 +299,11 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="859" y="984"/>
+            <point key="canvasLocation" x="908" y="955"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OZA-mM-qhn"/>
-        <segue reference="7En-OY-A2S"/>
+        <segue reference="hNB-Mp-h7V"/>
     </inferredMetricsTieBreakers>
 </document>
